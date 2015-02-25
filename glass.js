@@ -20,6 +20,7 @@ var dragstart = function (d) {
 
 var dblclick = function (d) {
   	d3.select(this).classed("fixed", d.fixed = false);
+  	cola.resume();
 }
 
 var drag = cola.drag()
